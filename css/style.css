@@ -80,7 +80,11 @@ a{
 
 
 .rowhead{
-  border-top: solid #000000 2px;
+  border: solid #000000 2px;
+}
+
+tr:hover{
+  background-color: rgba(126, 8, 37, 0.25);
 }
 
 
@@ -96,17 +100,11 @@ table{
     padding: 10px;
 }
 
-tr:hover{
-  background-color: rgba(126, 8, 37, 0.25);
-}
-
 td,th{
-  border-left:solid black 1px;
   border-top:solid black 1px;
 }
 
 th {
-  background-color:#c12258;
   border-top: none;
   width: 125px;
   padding: 10px;
@@ -133,10 +131,9 @@ tr:last-child td:last-child{
   border-bottom-right-radius: 50px;
 }
 
-tr:last-child td:first-child{
-  border-bottom-left-radius:50px;
+tr:first-child td:first-child{
+  border-bottom-left-radius: 50px;
 }
-
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
@@ -154,5 +151,4 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
-  position: fixed;
 }
