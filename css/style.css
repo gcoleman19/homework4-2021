@@ -24,8 +24,7 @@ caption{
 
 /*END STARTER CODE*/
 
-body{
-  
+body{ 
   color: #000000;
   font-size: 16px;
   margin: 1.2em;
@@ -64,58 +63,38 @@ a{
   
 }
 
-/*Req 5*/
-/*Add selector and rule here*/
-
-
-.colhead{
-  color: #FFFFFF;
-  min-width: 125px;
+table{
+  border-radius: 50px;
+  border: 5px solid #000000;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
   text-align: center;
-  background-color: #7e0825;
-  text-transform: uppercase;
+  vertical-align: middle;
+  color:#000000;
+  border-collapse: separate;
+  text-align: center;
   padding: 10px;
 }
 
+/*tbody tr:last-child td:first-child{
+  border-bottom-left-radius: 50px;
+}*/
 
-.rowhead{
-  border-top: solid #000000 2px;
-  border-right: solid #000000 2px;
+
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 50px;
 }
 
-
-table{
-    border: 5px solid #000000;
-    border-radius: 50px;
-    text-align: center;
-    vertical-align: middle;
-    color:#000000;
-    border-collapse: separate;
-    text-align: center;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
+tbody tr:last-child td:first-child{
+  border-bottom-left-radius: 50px;
 }
 
-td{
-  border-top:solid black 2px;
-  text-align:center;
-  padding: 10px;
+thead tr:first-child th:first-child{
+  border-top-left-radius: 50px;
 }
 
-th{
-  border-top:solid black 1px;
-}
-
-th {
-  border-top: none;
-  width: 125px;
-  padding: 10px;
-
+thead tr:first-child th:last-child{
+  border-top-right-radius:50px;
 }
 
 tr:nth-child(odd) {
@@ -126,23 +105,50 @@ tr:nth-child(even) {
   background-color: #D1D1D1;
 }
 
+tr:hover{
+  background-color: rgba(126, 8, 37, 0.25);
+}
+
+th {
+  border-top:solid black 1px;
+  border-top: none;
+  width: 125px;
+  padding: 10px;
+}
+
+td{
+  border-top:solid black 2px;
+  text-align:center;
+  padding: 10px;
+}
+
+/*Req 5*/
+/*Add selector and rule here*/
+
+
+.colhead{
+  text-align: center;
+  vertical-align: middle;
+  color: #FFFFFF;
+  min-width: 125px;
+  background-color: #7e0825;
+  text-transform: uppercase;
+  padding: 10px;
+
+}
+
+
+
+.rowhead{
+  border-top: solid #000000 2px;
+  border-right: solid #000000 2px;
+}
+
+
+
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
-thead tr:first-child th:first-child{
-  border-top-left-radius: 50px;
-}
 
-thead tr:first-child th:last-child{
-  border-top-right-radius:50px;
-}
-
-tbody tr:last-child td:first-child{
-  border-bottom-left-radius: 50px;
-}
-
-tbody tr:last-child td:last-child{
-  border-bottom-right-radius: 50px;
-}
 
 /*Add selectors and rules here*/
 
@@ -150,9 +156,7 @@ tbody tr:last-child td:last-child{
   border: 3px dashed #417243;
 }
 
-tr:hover{
-  background-color: rgba(126, 8, 37, 0.25);
-}
+
 
 footer{
   width:100%;
